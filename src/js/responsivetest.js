@@ -200,6 +200,14 @@ angular
         };
 
         /**
+         * Reload
+         */
+        $scope.reload = function() {
+            var iframe = $('iframe').get(0);
+            iframe.src = iframe.src;
+        };
+
+        /**
          * Rotate the layout
          */
         $scope.rotate = function() {
